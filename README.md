@@ -13,7 +13,7 @@ http://www.micahcarrick.com/tutorials/avr-microcontroller-tutorial/getting-start
 INSTALLATION
 ============
 Checkout the scripts using:
-	git clone https://github.com/martinvolk/AVR-GCC.git
+    git clone https://github.com/martinvolk/AVR-GCC.git
 
 Then cd into the AVR-GCC directory and issue "make".
 
@@ -22,13 +22,13 @@ This will download, make and install avr binutils, avr-gcc toolchain and avr-lib
 USAGE
 =====
 Compile avr program: 
-	# compile the program into elf
-	avr-gcc -mmcu=atmega328p -Wall -Os -o code.elf code.c
-	# create hex file compatible with avr programmers
-	avr-objcopy -j .text -j .data -O ihex blink.elf blink.hex
+    # compile the program into elf
+    avr-gcc -mmcu=atmega328p -Wall -Os -o code.elf code.c
+    # create hex file compatible with avr programmers
+    avr-objcopy -j .text -j .data -O ihex blink.elf blink.hex
 
 Upload the avr program to the chip: 
-	# use avrdude and the usbtiny programmer to flash the chip with the resulting hex firmware. 
-	avrdude -p m328p -c usbtiny -e -U flash:w:blink.hex
+    # use avrdude and the usbtiny programmer to flash the chip with the resulting hex firmware. 
+    avrdude -p m328p -c usbtiny -e -U flash:w:blink.hex
 
 See examples folder for example usage. 
