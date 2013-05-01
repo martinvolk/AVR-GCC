@@ -13,6 +13,7 @@ http://www.micahcarrick.com/tutorials/avr-microcontroller-tutorial/getting-start
 INSTALLATION
 ============
 Checkout the scripts using:
+
     git clone https://github.com/martinvolk/AVR-GCC.git
 
 Then cd into the AVR-GCC directory and issue "make".
